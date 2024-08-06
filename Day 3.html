@@ -30,6 +30,38 @@
           console.log("You r not eligible to vote");
         }
       }
+
+      // Task 3
+      // Write a program to find the largest of three numbers using nested if-else statement.
+      // Function to find the largest of three numbers
+      function findLargest(a, b, c) {
+        let largest;
+        if (a >= b) {
+          if (a >= c) {
+            largest = a;
+          } else {
+            largest = c;
+          }
+        } else {
+          if (b >= c) {
+            largest = b;
+          } else {
+            largest = c;
+          }
+        }
+        return largest;
+      }
+
+      // Taking input from the user
+      const num1 = parseFloat(prompt("Enter the first number:"));
+      const num2 = parseFloat(prompt("Enter the second number:"));
+      const num3 = parseFloat(prompt("Enter the third number:"));
+
+      // Finding the largest number
+      const largestNumber = findLargest(num1, num2, num3);
+
+      // Displaying the result
+      console.log("The largest number is:", largestNumber);
     </script>
   </body>
 </html>
